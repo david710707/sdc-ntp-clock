@@ -23,6 +23,6 @@ config wifi-iface 'sta'
 	option ifname 'apcli0'
 	option led 'mediatek:orange:wifi'
 	option key 'SecretKey'
-	option ssid 'SDC-4F'
-	option encryption 'none'
+	option ssid ''
+	option encryption 'psk+psk2'
 
