@@ -35,7 +35,9 @@ define Package/sdc-ntp-clock/extra_provides
 	echo 'libnetsnmp.so.30'; \
 	echo 'libnetsnmpagent.so.30'; \
 	echo 'libnetsnmpmibs.so.30'; \
-	echo 'libnetsnmptrapd.so.30';
+	echo 'libnetsnmptrapd.so.30'; \
+	echo 'libpthread.so.0'; \
+	echo 'librt.so.0';
 endef
 
 define Package/sdc-ntp-clock/install
