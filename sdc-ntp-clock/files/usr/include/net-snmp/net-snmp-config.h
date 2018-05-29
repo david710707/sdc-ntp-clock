@@ -117,7 +117,7 @@
 
 /* Define to 1 if you have the declaration of `sensors_get_all_subfeatures',
    and to 0 if you don't. */
-/* #undef HAVE_DECL_SENSORS_GET_ALL_SUBFEATURES */
+#define HAVE_DECL_SENSORS_GET_ALL_SUBFEATURES 1
 
 /* define to 1 if you have IRE_CACHE defined in <inet/ip.h> header file. */
 /* #undef HAVE_DEFINED_IRE_CACHE */
@@ -610,7 +610,7 @@
 /* #undef HAVE_PCI_LOOKUP_NAME */
 
 /* Define to 1 if you have the <pci/pci.h> header file. */
-/* #undef HAVE_PCI_PCI_H */
+#define HAVE_PCI_PCI_H 1
 
 /* on aix, if you have perfstat */
 /* #undef HAVE_PERFSTAT */
@@ -643,7 +643,7 @@
 #define HAVE_PREAD64 1
 
 /* Set if /etc/printcap exists */
-/* #undef HAVE_PRINTCAP */
+#define HAVE_PRINTCAP 1
 
 /* Define to 1 if you have the <pthread.h> header file. */
 #define HAVE_PTHREAD_H 1
@@ -691,7 +691,7 @@
 #define HAVE_SELECT 1
 
 /* Define to 1 if you have the <sensors/sensors.h> header file. */
-/* #undef HAVE_SENSORS_SENSORS_H */
+#define HAVE_SENSORS_SENSORS_H 1
 
 /* Define to 1 if you have the `setenv' function. */
 #define HAVE_SETENV 1
@@ -1328,7 +1328,7 @@
 /* #undef NETSNMP_CAN_USE_SYSCTL */
 
 /* configure options specified */
-#define NETSNMP_CONFIGURE_OPTIONS " '--prefix=/usr' '--with-install-prefix=/SDC/SNMP' '--host=mipsel-openwrt-linux' 'CC=mipsel-openwrt-linux-gcc' 'CXX=mipsel-openwrt-linux-g++' 'AR=mipsel-openwrt-linux-ar' '--with-default-snmp-version=2' '--with-logfile=/sysconf/log/snmpd.log' '--with-persistent-directory=/sysconf/net-snmp' '--sbindir=/sbin' '--libdir=/usr/lib' '--with-mibdirs=/sysconf/net-snmp/snmp/mibs' '--datadir=/sysconf/net-snmp/' '--sysconfdir=/sysconf/net-snmp/' '--with-endianness=little' '--disable-debugging' '--disable-embedded-perl' '--without-perl-modules' '--without-rpm' '--enable-mini-agent' '--enable-static' '--with-mib-modules=if-mib ip-mib tcp-mib udp-mib SDC-NTPCLOCK-MIB' 'host_alias=mipsel-openwrt-linux'"
+#define NETSNMP_CONFIGURE_OPTIONS " '--prefix=/usr' '--with-install-prefix=/SDC/SNMP' '--host=mipsel-openwrt-linux' 'CC=mipsel-openwrt-linux-gcc' 'CXX=mipsel-openwrt-linux-g++' 'AR=mipsel-openwrt-linux-ar' '--with-default-snmp-version=1' '--with-logfile=/sysconf/log/snmpd.log' '--with-persistent-directory=/sysconf/net-snmp' '--sbindir=/sbin' '--libdir=/usr/lib' '--with-mibdirs=/sysconf/net-snmp/snmp/mibs' '--datadir=/sysconf/net-snmp/' '--sysconfdir=/sysconf/net-snmp/' '--with-endianness=little' '--disable-debugging' '--disable-embedded-perl' '--without-perl-modules' '--without-rpm' '--enable-mini-agent' '--enable-static' '--with-mib-modules=stsChClockDigitalShmLib stsChClockDigital  if-mib ip-mib tcp-mib udp-mib' 'host_alias=mipsel-openwrt-linux'"
 
 /* default location to look for mibs to load using the above tokens and/or
    those in the MIBS envrionment variable */
@@ -1452,7 +1452,7 @@
 /* #undef NETSNMP_USE_PKCS11 */
 
 /* Define this if you have lm_sensors v3 or later */
-/* #undef NETSNMP_USE_SENSORS_V3 */
+#define NETSNMP_USE_SENSORS_V3 1
 
 /* Should we compile to use special opaque types: float, double, counter64,
    i64, ui64, union? */
@@ -1721,7 +1721,7 @@
  */
 
 /* Default (SNMP) version number for the tools to use */
-#define NETSNMP_DEFAULT_SNMP_VERSION 2
+#define NETSNMP_DEFAULT_SNMP_VERSION 1
 
 /* don't change these values! */
 #define NETSNMP_SNMPV1      0xAAAA       /* readable by anyone */
@@ -1729,7 +1729,7 @@
 #define NETSNMP_SNMPV2AUTH  0x8000       /* V2 Authenticated requests only */
 
 /* default list of mibs to load */
-#define NETSNMP_DEFAULT_MIBS ":SDC-NTPCLOCK-MIB:SNMPv2-MIB:IF-MIB:IP-MIB:TCP-MIB:UDP-MIB:SNMP-VIEW-BASED-ACM-MIB:SNMP-COMMUNITY-MIB:SNMP-MPD-MIB:SNMP-USER-BASED-SM-MIB:SNMP-FRAMEWORK-MIB"
+#define NETSNMP_DEFAULT_MIBS ":SNMPv2-MIB:IF-MIB:IP-MIB:TCP-MIB:UDP-MIB:SNMP-VIEW-BASED-ACM-MIB:SNMP-COMMUNITY-MIB:SNMP-MPD-MIB:SNMP-USER-BASED-SM-MIB:SNMP-FRAMEWORK-MIB"
 
 /* debugging stuff */
 /* if defined, we optimize the code to exclude all debugging calls. */
