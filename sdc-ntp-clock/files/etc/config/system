@@ -3,8 +3,8 @@ config system
 	option hostname 'SDC-Clock'
 	option conloglevel '8'
 	option cronloglevel '8'
-        option zonename 'Asia/Tokyo'
-        option timezone 'JST-9'
+        option zonename 'Asia/Taipei'
+        option timezone 'CST-8'
 
 config timeserver 'ntp'
 	list server '0.openwrt.pool.ntp.org'
