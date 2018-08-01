@@ -2,6 +2,6 @@
 
 snmpd -c /sysconf/net-snmp/snmp/snmpd.conf
 
-/SDC/Clock &
+/SDC/Clock 60 &
 
 exit 0
